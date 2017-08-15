@@ -1,0 +1,7 @@
+services:
+    app.command.categories.create_category_handler:
+        class: App\Application\Command\Category\CreateCategoryHandler
+        arguments:
+            - '@app.repository.categories'
+        tags:
+            - { name: tactician.handler, command: App\Application\Command\Category\CreateCategoryCommand }

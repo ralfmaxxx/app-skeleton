@@ -1,0 +1,13 @@
+App\Domain\Category\Category:
+    type: entity
+    table: category
+    id:
+        uuid:
+            type: string
+            varchar: 255
+            generator: { strategy: NONE }
+    fields:
+        name:
+            type: string
+            length: 255
+            nullable: false
